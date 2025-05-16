@@ -15,14 +15,12 @@
  
 */
 /* Reset */
-
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-
-/* H */
+/* H y P */
 
 h1 {
     color: #0D0E0D;
@@ -110,6 +108,7 @@ body {
 .fondo {
     width: 100%;
     height: auto;
+    border: #E12500 2px solido;
 }
 
 .sobreimg {
