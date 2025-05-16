@@ -91,19 +91,16 @@ body {
 
 .logo {
     width: 150px;
-    border: #E12500 1px solid;
+  
 }
 
-div {
-    border: #E12500 1px solid;
-}
 .cabeza {
     display: flexbox;
     justify-content: space-between;
     background-color: white;
     padding: 10px;
     margin: 0 auto;
-    border: #E12500 1px solid;
+    
 }
 
 .bienvenida {
