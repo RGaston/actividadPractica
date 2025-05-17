@@ -64,7 +64,7 @@ nav ul li {
     text-align: center;
 }
 
-ul a {
+nav ul li a {
 
     text-decoration: none;
     color: #64718F;
@@ -88,16 +88,17 @@ body {
 }
 
 .logo {
-    width: 150px;
-  
+    width: 350px;
+
 }
 
 .cabeza {
-    display: flexbox;
-    justify-content: space-between;
+    display: flex;
+    flex-direction: column-reverse;
     background-color: white;
     padding: 10px;
     margin: 0 auto;
+    align-items: center;
     
 }
 
@@ -108,7 +109,7 @@ body {
 .fondo {
     width: 100%;
     height: auto;
-    border: #E12500 2px solido;
+    
 }
 
 .sobreimg {
@@ -116,10 +117,9 @@ body {
     top: 10%;
     left: 55%;
     color: #0D0E0D;
-    font-size: 25px;
+    font-size: 18px;
     margin: 10px;
     padding: 15px;
-    
 
 }   
 
@@ -129,7 +129,7 @@ body {
     font-size: 80px;
     background-color: #FFF5F5;
     color: #64718F;
-    padding: 10 px 20px 10px 40px;
+    padding: 10px 20px 10px 40px;
     
 }
 
@@ -138,11 +138,6 @@ body {
    
     padding: 40px;
     margin: 15px;
-
-}
-
-section div {
-    margin: 30px;
 
 }
 
