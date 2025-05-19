@@ -20,6 +20,7 @@
     padding: 0;
     box-sizing: border-box;
 }
+
 /* H y P */
 
 h1 {
@@ -57,20 +58,21 @@ nav ul {
     list-style-type: none;
     padding: 15px;
     margin: 10px;
+    border: #E12500 1px solid;
 }
 
-nav ul li {
+header nav ul li {
     flex: 1;
     text-align: center;
 }
 
-nav ul li a {
+header nav ul li a {
 
     text-decoration: none;
     color: #64718F;
 }
 
-nav a:hover {
+header nav a:hover {
     color: #E12500;
 }
 
@@ -78,7 +80,6 @@ ul {
     display: flex;
     justify-content: space-around;
     align-items: center;
-
 }
 
 /* Cuerpo */
@@ -89,7 +90,6 @@ body {
 
 .logo {
     width: 350px;
-
 }
 
 .cabeza {
@@ -99,7 +99,6 @@ body {
     padding: 10px;
     margin: 0 auto;
     align-items: center;
-    
 }
 
 .bienvenida {
@@ -109,7 +108,6 @@ body {
 .fondo {
     width: 100%;
     height: auto;
-    
 }
 
 .sobreimg {
@@ -120,8 +118,7 @@ body {
     font-size: 18px;
     margin: 10px;
     padding: 15px;
-
-}   
+}
 
 .bien {
     position: absolute;
@@ -130,15 +127,11 @@ body {
     background-color: #FFF5F5;
     color: #64718F;
     padding: 10px 20px 10px 40px;
-    
 }
 
-
 .history {
-   
     padding: 40px;
     margin: 15px;
-
 }
 
 section div h2 {
@@ -151,8 +144,7 @@ section div h2 {
     width: 150px;
 }
 
-
-/* Pie de Pagina */
+/*===Pie de Pagina===*/
 
 /*imagenes*/
 .face {
@@ -164,7 +156,7 @@ section div h2 {
 }
 
 .wasa {
-    width: 200px;
+    width: 150px;
 }
 
 /* Contacto */
@@ -177,6 +169,7 @@ section div h2 {
 }
 
 /*Texto*/
+
 footer {
     background-color: #0D0E0D;
     padding: 20px;
@@ -188,3 +181,18 @@ footer {
     font-family: "Rubik";
     font-size: 16px;
 }
+
+/*===Media Queries===*/
+
+/*Moviles*/
+
+
+
+
+/*Tables*/
+
+
+
+/*Pc*/
+
+
