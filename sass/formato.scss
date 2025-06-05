@@ -1,0 +1,15 @@
+//Reset y Variables
+@use "partials/variables";
+@use "partials/reset";
+//Textos y Tipografias
+@use "partials/textos";
+//HTML
+@use "partials/header";
+@use "partials/body";
+@use "partials/footer";
+//Paginas
+@use "partials/index";
+@use "partials/restauracion";
+@use "partials/contacto";
+//MediaQueries
+@use "partials/mqueries";

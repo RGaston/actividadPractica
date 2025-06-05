@@ -1,0 +1,87 @@
+@media (max-width: 630px) {
+
+  .galeriaresta {
+    grid-template-columns: 1fr;
+  }
+
+  .form-text {
+    font-size: 16px;
+  }
+
+  .form button {
+    font-size: 14px;
+    padding: 10px;
+  }
+
+  .form label {
+    font-size: 14px;
+    display: grid;
+    grid-column: center;
+  }
+}
+
+@media (max-width: 900px) {
+
+  .bienvenida {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px;
+    flex-wrap: wrap;
+    margin-bottom: 100px;
+
+    .fondo {
+      display: none;
+    }
+
+    .maldito {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+      padding: 150px;
+      margin-top: 150px;
+      position: relative;
+
+      .bien {
+        position: static;
+        font-size: 40px;
+        text-align: center;
+        padding: 10px;
+        margin-top: 20px;
+      }
+      .sobreimg {
+        position: static;
+        width: 100%;
+        padding: 20px;
+        margin-top: 20px;
+        font-size: 16px;
+      }
+    }
+  }
+}
+
+footer {
+  margin-top: 500%;
+}
+
+/* Tablets y notebooks pequeñas (≤ 1024px) */
+
+@media (max-width: 1024px) {
+  header {
+    padding: 15px;
+    text-align: center;
+  }
+
+  header nav ul {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+  }
+
+  .galeriaresta {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}

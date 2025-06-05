@@ -1,0 +1,64 @@
+@use "variables" as*;
+
+/*Pag Index*/
+
+.logo {
+  width: 350px;
+}
+
+.cabeza {
+  display: flex;
+  flex-direction: column-reverse;
+  background-color: white;
+  padding: 10px;
+  margin: 0 auto;
+  align-items: center;
+}
+
+.bienvenida {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 40px;
+  gap: 20px;
+  
+
+  .fondo {
+    width: 100%;
+    height: auto;
+  }
+
+  .sobreimg {
+    position: absolute;
+    top: 10%;
+    left: 55%;
+    color: $negro;
+    font-size: 21px;
+    margin: 10px;
+    padding: 15px;
+    font-family: $tipografia-texto;
+  }
+
+  .bien {
+    position: absolute;
+    top: 10%;
+    font-size: 80px;
+    background-color: $blancoRosado;
+    color: $azul;
+    padding: 10px 20px 10px 40px;
+  }
+  
+  .maldito {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 15px;
+    margin-top: 15px;
+    position: relative;
+  }
+
+}
+
+

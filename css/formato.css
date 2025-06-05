@@ -1,0 +1,283 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*Textos*/
+h1, h2, h3 {
+  font-family: "Lora", serif;
+  text-align: center;
+  color: #0D0E0D;
+}
+
+h1 {
+  font-size: 30px;
+}
+
+h2 {
+  color: #E12500;
+  font-size: 20px;
+  padding: 10px 20px 10px 40px;
+  margin: 30px;
+}
+
+h3 {
+  color: #64718F;
+}
+
+p, .parrafo {
+  font-family: "Rubik", sans-serif;
+  font-size: 18px;
+  color: #64718F;
+  padding: 10px 20px 10px 40px;
+}
+
+.unico {
+  margin: 5px;
+}
+
+/*header*/
+header {
+  background-color: #FFF5F5;
+}
+header img {
+  width: 50px;
+}
+header nav ul {
+  font-family: "Rubik", sans-serif;
+  list-style-type: none;
+  padding: 15px;
+  margin: 10px;
+  background-color: #FFF5F5;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+header nav ul li {
+  flex: 1;
+  text-align: center;
+}
+header nav ul li a {
+  text-decoration: none;
+  color: #64718F;
+}
+header nav ul li a.hover:hover {
+  color: #E12500;
+}
+
+/*body*/
+body {
+  background-color: #FFF5F5;
+}
+
+.history {
+  padding: 10px 20px 10px 40px;
+  margin: 15px;
+}
+
+section div h2 {
+  margin-bottom: 25px;
+}
+
+/*footer*/
+footer {
+  background-color: #0D0E0D;
+  padding: 20px;
+  text-align: center;
+  margin-top: auto;
+}
+footer .pala {
+  color: #F0F0F0;
+  font-family: "Rubik", sans-serif;
+  font-size: 16px;
+}
+footer .face, footer .insta {
+  width: 50px;
+}
+footer .wasa {
+  width: 150px;
+}
+
+/*Pag Index*/
+.logo {
+  width: 350px;
+}
+
+.cabeza {
+  display: flex;
+  flex-direction: column-reverse;
+  background-color: white;
+  padding: 10px;
+  margin: 0 auto;
+  align-items: center;
+}
+
+.bienvenida {
+  position: relative;
+  width: 100%;
+}
+.bienvenida .fondo {
+  width: 100%;
+  height: auto;
+}
+.bienvenida .sobreimg {
+  position: absolute;
+  top: 10%;
+  left: 55%;
+  color: #0D0E0D;
+  font-size: 21px;
+  margin: 10px;
+  padding: 15px;
+  font-family: "Rubik", sans-serif;
+}
+.bienvenida .bien {
+  position: absolute;
+  top: 10%;
+  font-size: 80px;
+  background-color: #FFF5F5;
+  color: #64718F;
+  padding: 10px 20px 10px 40px;
+}
+
+/*Pag Restauracion*/
+.galeriaresta {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  padding: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.galeriaresta img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+.galeriaresta img:hover {
+  transform: scale(1.03);
+}
+
+/*Pag Contacto*/
+.contac {
+  justify-items: center;
+}
+
+.formulario {
+  background-color: #0D0E0D;
+  padding: 40px 20px;
+  margin-top: 40px;
+}
+.formulario .form-text {
+  text-align: center;
+  font-size: 18px;
+  color: #F0F0F0;
+  margin-bottom: 20px;
+}
+.formulario .form {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 15px;
+}
+.formulario .form label {
+  font-family: "Rubik", sans-serif;
+  color: #FFF5F5;
+  margin-top: 10px;
+  padding: 10px;
+}
+.formulario .form input, .formulario .form textarea {
+  font-family: "Lora", serif;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #FFF5F5;
+  color: #0D0E0D;
+  text-align: center;
+}
+.formulario .form textarea {
+  resize: horizontal;
+  min-height: 100px;
+  padding: 25px;
+}
+.formulario .form button {
+  background-color: #FFF5F5;
+  color: #0D0E0D;
+  font-weight: bold;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  margin-top: 10px;
+  cursor: pointer;
+}
+.formulario .form button:hover {
+  background-color: #64718F;
+}
+
+@media (max-width: 630px) {
+  .galeriaresta {
+    grid-template-columns: 1fr;
+  }
+  .form-text {
+    font-size: 16px;
+  }
+  .form button {
+    font-size: 14px;
+    padding: 10px;
+  }
+  .form label {
+    font-size: 14px;
+    display: grid;
+    grid-column: center;
+  }
+}
+@media (max-width: 900px) {
+  .fondo {
+    display: none;
+  }
+  .sobreimg {
+    position: static;
+    width: 100%;
+    padding: 20px;
+    margin-top: 20px;
+    font-size: 16px;
+  }
+  .bien {
+    position: static;
+    font-size: 40px;
+    text-align: center;
+    padding: 10px;
+    margin-top: 20px;
+  }
+  .bienvenida {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 12px;
+  }
+  .maldito {
+    position: absolute;
+    width: 100%;
+    padding: 15px;
+    margin-top: 15px;
+  }
+}
+/* Tablets y notebooks pequeñas (≤ 1024px) */
+@media (max-width: 1024px) {
+  header {
+    padding: 15px;
+    text-align: center;
+  }
+  header nav ul {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+  }
+  .galeriaresta {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}

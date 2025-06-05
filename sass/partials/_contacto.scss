@@ -1,0 +1,64 @@
+@use "variables" as*;
+
+/*Pag Contacto*/
+
+.contac {
+  justify-items: center;
+}
+
+.formulario {
+  background-color: $negro;
+  padding: 40px 20px;
+  margin-top: 40px;
+
+  .form-text {
+    text-align: center;
+    font-size: 18px;
+    color: $grisClaro;
+    margin-bottom: 20px;
+  }
+
+  .form {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 15px;
+
+    label {
+      font-family: $tipografia-texto;
+      color: $blancoRosado;
+      margin-top: 10px;
+      padding: 10px;
+    }
+
+    input, textarea {
+      font-family: $tipografia-titulo;
+      padding: 10px;
+      border: none;
+      border-radius: 5px;
+      background-color: $blancoRosado;
+      color: $negro;
+      text-align: center;
+    }
+
+    textarea {
+      resize: horizontal;
+      min-height: 100px;
+      padding: 25px;
+    }
+
+    button {
+      background-color: $blancoRosado;
+      color: $negro;
+      font-weight: bold;
+      padding: 10px;
+      border: none;
+      border-radius: 5px;
+      margin-top: 10px;
+      cursor: pointer;
+
+      &:hover {
+        background-color: $azul;
+      }
+    }
+  }
+}
